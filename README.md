@@ -5,7 +5,7 @@
 
 A Python Web Scraper that scraps basic Player Data of EA Sports FIFA 20 from the site sofifa.com
 
-It includes Player data like:
+It scraps Player data like:
 1. Player Name
 2. Age
 3. Overall
