@@ -1,7 +1,7 @@
 #importing Scarpy
 import scrapy
 
-# Spider
+# Spider(classes that you define and that Scrapy uses to scrape information from a website)
 class StatSpider(scrapy.Spider):
     name = "stats"
     urls=[]
@@ -10,7 +10,7 @@ class StatSpider(scrapy.Spider):
         urls.append(url)
     start_urls=urls
 
-# Parse Function
+# Parse method(a method that will be called to handle the response downloaded for each of the requests made)
     def parse(self, response):
 
         rows=response.xpath('//*[@id="adjust"]/div/div[1]/table/tbody/tr')
